@@ -12,6 +12,8 @@ let slide_next = hero_slide.querySelector('.slide-next')
 
 let slide_prev = hero_slide.querySelector('.slide-prev')
 
+let header = document.querySelector('header')
+
 showSlide = (index) => {
   hero_slide.querySelector('.slide.active').classList.remove('active');
   hero_slide.querySelector('.slide-control-item.active').classList.remove('active');
@@ -55,3 +57,12 @@ setTimeout(() => {
 //     if (!hero_slide_play) return
 //     nextSlide()
 // }, 5000)
+
+// change header style when scroll
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    header.classList.add('shrink')
+  } else {
+    header.classList.remove('shrink')
+  }
+})
