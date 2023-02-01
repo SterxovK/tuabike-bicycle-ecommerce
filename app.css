@@ -351,3 +351,50 @@ header.shrink {
     background-color: var(--txt-white);
     color: var(--main-color);
 }
+
+.product-card {
+    padding: 20px;
+    text-align: center;
+    transition: background-color .3s ease 0s;
+}
+
+.product-card:hover {
+    background-color: var(--bg-black);
+}
+
+.product-card-img {
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.product-card-large .product-name {
+    font-size: 3rem;
+}
+
+.product-price {
+    font-weight: 700;
+    color: var(--txt-white);
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+.product-card-large .product-price {
+    font-size: 2rem;
+}
+
+.product-card-large .btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.col-center {
+    display: flex;
+    align-items: center;
+}
+
