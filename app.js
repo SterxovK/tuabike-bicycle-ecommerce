@@ -20,7 +20,6 @@ showSlide = (index) => {
 };
 
 nextSlide = () => {
-  console.log('erw')
   hero_slide_index = hero_slide_index + 1 === hero_slide_items.length ? 0 : hero_slide_index + 1;
   showSlide(hero_slide_index);
 };
